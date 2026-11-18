@@ -4,9 +4,9 @@
 
 | Keterangan   | Isi                                                |
 |--------------|----------------------------------------------------|
-| Nama Lengkap | [ISI NAMA LENGKAP]                                 |
-| NIM          | [ISI NIM]                                          |
-| Kelas        | [PTI3A / PTI3B]                                    |
+| Nama Lengkap | [Hermawati]                                 |
+| NIM          | [C2583207038]                                          |
+| Kelas        | [PTI3B]                                    |
 | Mata Kuliah  | Algoritma dan Pemrograman Lanjutan                 |
 | Dosen        | Taofik Muhammad, M.Kom                             |
 | Nama Proyek  | Sistem Monitoring Stok dan Penjualan Kantin Kampus |
@@ -100,53 +100,58 @@ Data awal: Nasi Goreng (12000, stok 20), Mie Ayam (10000, stok 15), Es Teh Manis
 - **Hasil yang diharapkan:** Produk muncul dalam daftar.
 - **Keterangan:** Daftar awal berisi 6 produk. Setelah menu 2 dijalankan, program menampilkan pesan `Produk "Ayam geprek" berhasil ditambahkan.` dan Ayam geprek muncul sebagai produk nomor 7 (harga 8000, stok 40) pada daftar produk di skenario berikutnya.
 
-![Skenario 1](screenshots/01-tambah-produk.png)
+<img width="1600" height="900" alt="WhatsApp Image 2026-11-17 at 12 51 20" src="https://github.com/user-attachments/assets/4f07a25f-69bb-48f9-b1c7-f0348bea3ad9" />
+
 
 ### Skenario 2: Transaksi
 - **Input/Tindakan:** Menu 4, beli: Mie Ayam x 4, Air Mineral x 2, Ayam geprek x 3, lalu masukkan 0 untuk selesai dan konfirmasi `y`.
 - **Hasil yang diharapkan:** Subtotal dan total benar.
 - **Keterangan:** Hitungan manual: Mie Ayam 4 x 10000 = 40000; Air Mineral 2 x 3000 = 6000; Ayam geprek 3 x 8000 = 24000. Total = 40000 + 6000 + 24000 = 70000, sesuai tampilan program.
 
-![Skenario 2](screenshots/02-transaksi.png)
+<img width="1600" height="900" alt="WhatsApp Image 2026-11-17 at 12 51 21" src="https://github.com/user-attachments/assets/f016b453-6d3f-4d7e-98ac-97128c1cd39e" />
+
 
 ### Skenario 3: Pembaruan Stok
 - **Input/Tindakan:** Selesaikan transaksi pada skenario 2, lalu buka menu 1.
 - **Hasil yang diharapkan:** Stok dan jumlah terjual berubah.
 - **Keterangan:** Sebelum transaksi: Mie Ayam 15, Air Mineral 4, Ayam geprek 40 (daftar produk di awal menu 4). Sesudah transaksi (menu 1): Mie Ayam 11, Air Mineral 2, Ayam geprek 37. Produk lain tidak berubah. Jumlah terjual pada menu 8 ikut bertambah (Mie Ayam 4, Air Mineral 2, Ayam geprek 3).
 
-![Skenario 3 - sebelum](screenshots/03a-stok-sebelum.png)
-![Skenario 3 - sesudah](screenshots/03b-stok-sesudah.png)
+<img width="1600" height="900" alt="3" src="https://github.com/user-attachments/assets/a9ad67a6-c81a-4bb5-a3d6-88561cdd5523" />
+
 
 ### Skenario 4: Stok Tidak Cukup
 - **Input/Tindakan:** Menu 4, beli Es Teh Manis x 31 (stok tersedia 30), lalu masukkan 0.
 - **Hasil yang diharapkan:** Transaksi ditolak; stok tetap.
 - **Keterangan:** Program menampilkan `[!] Stok Es Teh Manis tidak cukup (tersedia 30, sudah dipilih 0).` lalu transaksi dibatalkan karena tidak ada produk dipilih. Setelah penolakan, laporan (menu 8) masih menunjukkan total 9 unit dan pendapatan 70000, sama seperti sebelum percobaan, sehingga tidak ada data yang berubah. Stok Es Teh Manis tetap 30.
 
-![Skenario 4 - penolakan](screenshots/04a-stok-tidak-cukup.png)
-![Skenario 4 - stok tetap](screenshots/04b-stok-tetap.png)
+<img width="1600" height="900" alt="4" src="https://github.com/user-attachments/assets/3a352219-b063-4ec4-b924-2a65e92c3216" />
+
 
 ### Skenario 5: Laporan
 - **Input/Tindakan:** Menu 8.
 - **Hasil yang diharapkan:** Unit, pendapatan, dan produk terlaris benar.
 - **Keterangan:** Total unit terjual 4 + 2 + 3 = 9, total pendapatan 40000 + 6000 + 24000 = 70000, produk terlaris Mie Ayam (4 unit).
 
-![Skenario 5](screenshots/05-laporan.png)
+<img width="1600" height="900" alt="5" src="https://github.com/user-attachments/assets/807560f4-5bb3-4462-9972-2fc5432e94fa" />
+
 
 ### Skenario 6: Pengurutan
 - **Input/Tindakan:** Menu 7, pilih urutan 1 (harga termurah), lalu ulangi dan pilih urutan 2 (jumlah terjual terbanyak).
 - **Hasil yang diharapkan:** Harga dari termurah; jumlah terjual dari terbanyak.
 - **Keterangan:** Urutan harga dimulai dari Gorengan (2000) sampai Nasi Goreng (12000). Urutan terjual dimulai dari Mie Ayam (4), Ayam geprek (3), Air Mineral (2), lalu produk yang belum terjual (0).
 
-![Skenario 6 - harga](screenshots/06a-urut-harga.png)
-![Skenario 6 - terjual](screenshots/06b-urut-terjual.png)
+<img width="1600" height="900" alt="6" src="https://github.com/user-attachments/assets/b8e544da-2285-4bd1-af85-07f7884e2af5" />
+
+<img width="1600" height="900" alt="7" src="https://github.com/user-attachments/assets/6c611987-9c78-4c49-8682-3f60e0bf4d14" />
+
 
 ### Skenario 7: Pencarian dan Stok
 - **Input/Tindakan:** Menu 6 cari produk: `kopi`. Lalu menu 9 untuk cek stok < 5.
 - **Hasil yang diharapkan:** Hasil pencarian dan peringatan stok menipis tepat.
 - **Keterangan:** Pencarian "kopi" menemukan 1 produk (Kopi Susu, 8000, stok 12). Menu 9 menampilkan peringatan untuk Air Mineral dengan stok 2.
 
-![Skenario 7 - pencarian](screenshots/07a-cari-produk.png)
-![Skenario 7 - stok menipis](screenshots/07b-stok-menipis.png)
+<img width="1600" height="900" alt="8" src="https://github.com/user-attachments/assets/8df6b0cd-6b41-49d4-beb3-842603d411d9" />
+
 
 ## Struktur Repository
 
